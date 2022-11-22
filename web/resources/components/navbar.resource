@@ -17,3 +17,6 @@ Go To List Account
 
 Go To Moviment Page
     Click    css=a[href="/movimentacao"]
+
+Go To Monthly Summary
+    Click    css=a[href="/extrato"]

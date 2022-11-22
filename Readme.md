@@ -208,12 +208,14 @@ Post-conditions: A mensagem "Endereço de email já utilizado" deve ser exibido
 
 ## 🚀 Tecnologias
 
-- [Python]  - plataforma de desenvolvimento <br>
-- [Pip]  - gerenciador de pacotes que é instalado junto com o python 
-- [Node.js] - plataforma de desenvolvimento
-- [Robot-Framework] - framework de testes automatizados
-- [Browser] - Uma moderna biblioteca para o de testes da Web desenvolvida por Playwright . Visando velocidade, confiabilidade e visibilidade.
-- [Faker] - Uma biblioteca de geração de dados de teste aleatório
+- [Python](https://www.python.org/downloads/)   - plataforma de desenvolvimento <br>
+- [Pip](https://pip.pypa.io/en/stable/)  - gerenciador de pacotes que é instalado junto com o python 
+- [Node.js](https://nodejs.org/) - plataforma de desenvolvimento
+- [Robot-Framework](https://robotframework.org/robotframework/) - framework de testes automatizados
+- [Browser](https://github.com/MarketSquare/robotframework-browser) - Uma moderna biblioteca para o de testes da Web desenvolvida por Playwright . Visando velocidade, confiabilidade e visibilidade.
+- [Faker](https://guykisel.github.io/robotframework-faker/) - Uma biblioteca de geração de dados de teste aleatório
+- [DateTime](https://robotframework.org/robotframework/latest/libraries/DateTime.html#library-documentation-top) - Uma biblioteca padrão do Robot Framework que suporta a criação e conversão de valores de data e hora
+
 
 
 
@@ -245,7 +247,7 @@ pip install -U pip
 ```
 
 
-[Node.js](https://nodejs.org/) v16 ou superior para executar.
+[Node.js] v16 ou superior para executar.
 
 Execute os comandos abaixo para instalar das dependências do projeto e execução dos testes:
 
@@ -253,7 +255,7 @@ Execute os comandos abaixo para instalar das dependências do projeto e execuç�
 npm i
 ```
 
-- [Browser](https://github.com/MarketSquare/robotframework-browser) Instale o robotframework-browser a partir da linha de comando:
+- [Browser] Instale o robotframework-browser a partir da linha de comando:
 
 ```sh
 pip install robotframework-browser

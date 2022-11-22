@@ -27,14 +27,21 @@ Interested Person
 Amount To Be Paid
     [Arguments]      ${AMOUNT}
     Fill Text        input[id="valor"]        ${AMOUNT}
-    
-Select Account
-    Get Select Options      input[name="conta"]    
-    #Click       teste01
 
-Click To Change First Moviment
-    Click         css=tbody > tr > td > a > .glyphicon-edit >> nth=0
+Select the account
+     [Arguments]      ${selectAccount}
+    Press Keys                   css=select[id="conta"]      ${selectAccount}
 
-Click To Delete The Second Moviment
-    Click         xpath=//tbody/tr[2]/td >> .glyphicon-remove-circle 
+Select Paid Status
+    Click                     css=input[id="status_pago"]        
+
+Select Pending Status
+    Click                     css=input[id="status_pendente"]     
+
+Click To Save
+    Click                      css=button >> text=Salvar
+
+Select The Type Of Movement
+     [Arguments]              ${selectMovement}
+    Press Keys                css=select[id="tipo"]      ${selectMovement}
 

@@ -2,7 +2,7 @@
 Documentation        Suite de testes de cadastro
 ...                  O usuário deve se cadastrar no sistema Seu Barriga
 
-Resource            ../resources/base.resource
+Resource            ${CURDIR}/../resources/base.resource
 
 Test Setup             Go To Login Page
 Test Teardown          Close Browser  

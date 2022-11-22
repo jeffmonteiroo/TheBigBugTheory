@@ -2,7 +2,7 @@
 Documentation        Suite de testes de autenticação
 ...                  O usuário deve acessar o sistema Seu Barriga
 
-Resource            ../resources/base.resource
+Resource            ${CURDIR}/../resources/base.resource
 
 Test Teardown        Close Browser
 

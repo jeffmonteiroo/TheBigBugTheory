@@ -5,7 +5,7 @@ Library        Browser
 
 Fill Account Name
     [Arguments]    ${CONTA}
-    Fill Text        input[id="nome"]        ${CONTA}
+    Fill Text        input[id="nome"]        Conta de ${CONTA}
 
 Submit Account Name
     Click        css=button >> text=Salvar

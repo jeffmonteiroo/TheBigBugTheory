@@ -1,12 +1,16 @@
 *** Settings ***
 Documentation        Tudo começa aqui
 
-Resource        pages/login.resource
-Resource        pages/user.resource
-Resource        components/alert.resource
-Resource        components/navbar.resource
-Resource        pages/account.resource
-Resource        pages/movement.resource
+Library        DateTime
+
+Resource        ${CURDIR}/pages/loginPage.resource
+Resource        ${CURDIR}/pages/userPage.resource
+Resource        ${CURDIR}/components/alert.resource
+Resource        ${CURDIR}/components/navbar.resource
+Resource        ${CURDIR}/pages/accountPage.resource
+Resource        ${CURDIR}/pages/movementPage.resource
+Resource        ${CURDIR}/pages/monthly_summaryPage.resource
+Resource        ${CURDIR}/pages/homePage.resource
 
 *** Keywords ***
 # Helpers
