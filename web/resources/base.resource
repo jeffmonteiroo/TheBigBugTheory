@@ -27,7 +27,7 @@ Get Fixture
     [return]        ${fixture}
 
 Do Login
-    ${user}    Get Fixture        jeff
+    ${user}    Get Fixture        chaves
     Go To Login Page
     Fill Credentials      ${user}[email]        ${user}[senha] 
     Submit Credentials

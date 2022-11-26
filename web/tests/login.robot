@@ -10,9 +10,9 @@ Test Teardown        Close Browser
 
 *** Test Cases ***
 Realizar o login de usuário 
-    ${Jeff}    Get Fixture        jeff
+    ${user}    Get Fixture        chaves
     
     Go To Login Page
-    Fill Credentials       ${Jeff}[email]        ${Jeff}[senha]    
+    Fill Credentials       ${user}[email]        ${user}[senha]    
     Submit Credentials
-    Verify Alert           Bem vindo, ${Jeff}[name]!
+    Verify Alert           Bem vindo, ${user}[name]!
