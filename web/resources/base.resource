@@ -2,6 +2,7 @@
 Documentation        Tudo começa aqui
 
 Library        DateTime
+Library        JSONLibrary
 
 Resource        ${CURDIR}/pages/loginPage.resource
 Resource        ${CURDIR}/pages/userPage.resource
@@ -12,10 +13,7 @@ Resource        ${CURDIR}/pages/movementPage.resource
 Resource        ${CURDIR}/pages/monthly_summaryPage.resource
 Resource        ${CURDIR}/pages/homePage.resource
 
-##BDD
 
-
-Library        JSONLibrary
 *** Keywords ***
 # Helpers
 

@@ -11,13 +11,13 @@ Suite Teardown       Resetar Dados
 
 *** Test Cases ***
 
-Realizar o cadastro de 
+Realizar o cadastro de Conta
     Go To Create Account
     Fill Account Name           Conta The Big Bug Theory
     Submit Account Name
     Verify Alert                Conta adicionada com sucesso!
     
-Realizar o cadastro de "Conta mesmo nome"
+Realizar o cadastro de uma conta já existente
 
     Go To Create Account
     Fill Account Name            Conta mesmo nome
