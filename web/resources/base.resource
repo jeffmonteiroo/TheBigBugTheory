@@ -12,10 +12,35 @@ Resource        ${CURDIR}/pages/movementPage.resource
 Resource        ${CURDIR}/pages/monthly_summaryPage.resource
 Resource        ${CURDIR}/pages/homePage.resource
 
+##BDD
+
+
+Library        JSONLibrary
 *** Keywords ***
 # Helpers
+
+Get Fixture
+    [Arguments]      ${fixture_file}
+
+    ${fixture}        Load JSON From File
+    ...                ${CURDIR}/fixtures/${fixture_file}.json
+    ...               encoding=UTF-8
+
+    [return]        ${fixture}
+
 Do Login
+    ${Jeff}    Get Fixture        jeff
     Go To Login Page
-    Fill Credentials       jeffmonteiroo@gmail.com        123456    
+    Fill Credentials      ${Jeff}[email]        ${Jeff}[senha] 
     Submit Credentials
-    Verify Alert           Bem vindo, Jeff!
+    Verify Alert           Bem vindo, ${Jeff}[name]!
+
+
+
+Resetar Dados
+    Do Login
+    Click        css=a[href="/reset"]
+
+Encerrar sessão
+    Close Browser
+

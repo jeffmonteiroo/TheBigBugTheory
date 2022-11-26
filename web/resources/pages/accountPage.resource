@@ -5,14 +5,13 @@ Library        Browser
 
 Fill Account Name
     [Arguments]    ${CONTA}
-    Fill Text        input[id="nome"]        Conta de ${CONTA}
+    Fill Text        css=input[id="nome"]        ${CONTA}
 
 Submit Account Name
     Click        css=button >> text=Salvar
 
-Click To Change First Account
-    Click         css=tbody > tr > td > a > .glyphicon-edit >> nth=0
+Click To Change An Account
+    Click        xpath=//*/tbody/tr[1]/td[2]/a[1]
 
-Click To Delete The Second Account
-    Click         xpath=//tbody/tr[2]/td >> .glyphicon-remove-circle 
-
+Click To Delete An Account
+    Click        xpath=//*/tbody/tr[7]/td[2]/a[2]

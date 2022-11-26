@@ -17,71 +17,35 @@ O sistema seu barriga é um app revolucionário que vai ajudá-lo a manter suas 
 
 ### `RF01`: Criar usuário
 
-##### `CT01`: Deve permitir o cadastro de um novo usuário conforme as características da tabela abaixo:
+##### `CT01`: Realizar cadastro de usuário
 
 Severidade: Alta <br>
 Manual: [ ]    Automatizado: [X]
 
-##### `CT02`: Realizar o cadastro sem informar o nome
-
-##### `CT03`: Realizar o cadastro sem informar o e-mail
-
-##### `CT04`: Realizar o cadastro sem informar a senha
-
-##### `CT05`: Realizar o cadastro com todos os campos em branco
-
-##### `CT06`: Realizar o cadastro com e-mail inválido
-
-##### `CT07`: Realizar o cadastro com o e-mail já utilizado
-
-
-
-| Campos | Descrição                             | Tipo     | Obrigatório |
-| ------ | :------------------------------------ | -------- | ----------- |
-| Nome   | Nome de usuário                   | texto    | sim         |
-| E-mail    | E-mail utilizado para realizar o login                                 | texto  | sim         |
-| senha  | Senha de acesso                             | texto    | sim         
 
 ### `RF02`: Login
-##### `CT01`: Login com o usuário e senha válidos
-##### `CT02`:  E-mail não cadastrado
-##### `CT03`: Senha incorreta
-##### `CT04`: E-mail com o formato incorreto
-##### `CT05`: E-mail em branco
-##### `CT06`: Senha em branco
-##### `CT07`: E-mail e senha em branco
-      
+##### `CT01`: Realizar o login de usuário
 
 ### `RF03`: Conta
-##### `CT01`: Cadastrar conta
-##### `CT02`:  Cadastrar conta com o nome já existente
+##### `CT01`: Realizar o cadastro de conta 
+##### `CT02`: Realizar o cadastro de conta com o nome já existente
 ##### `CT03`: Editar Conta
 ##### `CT04`: Deletar Conta
 
 ### `RF04`: Criar Movimentação
 ##### `CT01`: Criar uma movimentação de receita paga
 ##### `CT02`: Criar uma movimentação de receita pendente
-##### `CT03`:Criar uma movimentação de despesa paga
+##### `CT03`: Criar uma movimentação de despesa paga
 ##### `CT04`: Criar uma movimentação de despesa pendente
-##### `CT05`: Todos os campos são obrigatórios
+
 
 
 ### `RF05`: Resumo Mensal
 
-##### `CT01`:Listar movimentação mensal
+##### `CT01`: Listar movimentação mensal
 ##### `CT02`: Remover movimentação
 
 
-### `RF06`: Home
-
-##### `CT01`:Consultar saldo
-##### `CT02`:  Consultar saldo após inclusão de movimentação de receita
-##### `CT03`: Consultar saldo após inclusão de movimentação de despesa
-##### `CT04`: Consultar saldo após exclusão de movimentação de receita
-##### `CT05`: Consultar saldo após exclusão de movimentação de despesa
-
-### `RF07`: Logoff
-##### `CT01`: Sair da aplicação
 
 
 ### RF01 Criar usuário 
@@ -118,74 +82,6 @@ Post-conditions: A mensagem "Nome é um campo obrigatório" deve ser exibida.
    05 - Click em cadastrar <br>
 
 
-##### CT03 -  Realizar o cadastro sem informar o e-mail
-Description: Não deve permitir o cadastro sem informar o e-mail
-
-Pre-conditions: Realizar o preenchimentos de todos os campos com excessão do e-mail.
-
-Post-conditions: 
-A mensagem "Email é um campo obrigatório" deve ser exibida.
-
-#### Steps: 
-   01 - Abra o navegador e acesse a página principal do Seu Barriga.<br>
-   02 -  Clique na opção "Novo usuário?"<br>
-   03 - Insira o nome <br>
-   04 - Insira a senha <br>
-   05 - Click em cadastrar <br>
-
- ##### CT05 -  Realizar o cadastro sem informar a senha
-Description: Não deve permitir o cadastro sem informar a senha
-
-Pre-conditions: Realizar o preenchimentos de todos os campos com excessão da senha.
-
-Post-conditions: A mensagem "Senha é um campo obrigatório" deve ser exibida.
-
-#### Steps: 
-   01 - Abra o navegador e acesse a página principal do Seu Barriga.<br>
-   02 -  Clique na opção "Novo usuário?"<br>
-   03 - Insira o nome <br>
-   04 - Insira o e-mail<br>
-   05 - Click em cadastrar <br>
-
- ##### CT05 -  Realizar o cadastro com todos os campos em branco
-Description: Não deve permitir o cadastro sem informar os campos
-
-Pre-conditions: 
-
-Post-conditions: As mensagens "Nome é um campo obrigatório", "Email é um campo obrigatório" e "Senha é um campo obrigatório" devem ser exibidas
-#### Steps: 
-   01 - Abra o navegador e acesse a página principal do Seu Barriga.<br>
-   02 -  Clique na opção "Novo usuário?"<br>
-   03 - Click em cadastrar <br>
-
- ##### CT06 - Realizar o cadastro com e-mail inválido
- Description: Não deve permitir o cadastro com e-mail no formato inválido.
-
-Pre-conditions: 
-
-Post-conditions: Deve exibir uma mensagem informando que o e-mail é invalido.
-
-#### Steps: 
-   01 - Abra o navegador e acesse a página principal do Seu Barriga.<br>
-   02 -  Clique na opção "Novo usuário?"<br>
-   03 - Insira o nome <br>
-   04 - Insira um e-mail inválido<br>
-   05 - Insira a senha<br>
-   06 - Click em cadastrar <br>
-##### Input data
-jeffmonteiroo.com.br  <br>
-@com.br  <br>
-www.smartbit.com.br  <br>
-admin&smartbit.com  <br>
-asjhdasdas12312  <br>
-#$ˆ&ˆ%%ˆ&  <br>
-espaço em branco  <br>
-admin  <br>
- ##### CT07 - Realizar o cadastro com o e-mail já utilizado em outro cadastro
- Description: Não deve permitir o cadastro com e-mail já cadastrado
-
-Pre-conditions: Utilizar um e-mail já cadastrado.
-Post-conditions: A mensagem "Endereço de email já utilizado" deve ser exibido
 
 ### RF02 login 
 #### Descrição da funcionalidade
@@ -205,6 +101,31 @@ Post-conditions: A mensagem "Endereço de email já utilizado" deve ser exibido
    04 - Insira um e-mail <br>
    05 - Insira a senha <br>
    06 - Click em cadastrar <br>
+
+
+### RF03 Conta 
+#### Descrição da funcionalidade
+ Funcionalidade de Criação de conta do sistema Seu Barriga para que seja possível realizar a movimentação
+
+##### `CT01`: Cadastrar conta
+##### `CT02`: Cadastrar conta com o nome já existente
+##### `CT03`: Editar Conta
+##### `CT04`: Deletar Conta
+
+
+
+### RF04: Criar Movimentação
+##### `CT01`: Criar movimentação de receita paga do dia atual
+##### `CT02`: Criar movimentação de receita pendente do dia atual
+ 
+##### `CT03`: Criar movimentação de despesa paga no dia atual
+##### `CT04`: Criar movimentação de despesa pendente no dia atual
+
+### RF05: Resumo Mensal
+
+##### `CT01`: Listar movimentação mensal
+##### `CT02`: Remover movimentação
+
 
 ## 🚀 Tecnologias
 
@@ -286,5 +207,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Feito com 💜 &nbsp;por Fernando Papito 👋 &nbsp;[Meu linkedin](https://www.linkedin.com/in/papitoio/)
+Feito com 💜 &nbsp;por Jefferson Monteiro 👋 &nbsp;[Meu linkedin](https://www.linkedin.com/in/papitoio/)
 #
