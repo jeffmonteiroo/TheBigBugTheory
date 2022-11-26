@@ -1,4 +1,7 @@
 *** Settings ***
+Documentation        Suite de testes de Resumo Mensal
+...                  O usuário deve consultar o Resumo Mensal o sistema Seu Barriga
+
 Resource          ${CURDIR}/../resources/base.resource  
 
 
