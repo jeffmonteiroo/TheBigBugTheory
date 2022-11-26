@@ -6,7 +6,7 @@ Resource            ${CURDIR}/../resources/base.resource
 
 Test Setup           Do Login
 Test Teardown        Close Browser
-Suite Teardown       Resetar Dados
+
 
 *** Test Cases ***
 Realizar o login de usuário 

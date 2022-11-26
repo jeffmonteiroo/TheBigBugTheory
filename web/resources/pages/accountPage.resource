@@ -11,7 +11,7 @@ Submit Account Name
     Click        css=button >> text=Salvar
 
 Click To Change An Account
-    Click        xpath=//*/tbody/tr[1]/td[2]/a[1]
+    Click        xpath=//text()[contains(., "Conta para alterar")]//..//..//a[@href][1]
 
 Click To Delete An Account
-    Click        xpath=//*/tbody/tr[7]/td[2]/a[2]
+    Click       xpath=//text()[contains(., "Conta The Big Bug Theory")]//..//..//a[@href][2]

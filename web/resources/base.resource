@@ -27,11 +27,11 @@ Get Fixture
     [return]        ${fixture}
 
 Do Login
-    ${Jeff}    Get Fixture        jeff
+    ${user}    Get Fixture        jeff
     Go To Login Page
-    Fill Credentials      ${Jeff}[email]        ${Jeff}[senha] 
+    Fill Credentials      ${user}[email]        ${user}[senha] 
     Submit Credentials
-    Verify Alert           Bem vindo, ${Jeff}[name]!
+    Verify Alert           Bem vindo, ${user}[name]!
 
 
 
